@@ -29,6 +29,10 @@ jobs:
       - name: Install npm package
         run: |
           git clone https://github.com/ShredMod/packager.git
+          cd packager
+          npm i
+          npm run build
+          cd ..
       
       - name: Run the NODE project
         run: |

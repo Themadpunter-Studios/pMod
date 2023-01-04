@@ -39,7 +39,9 @@ jobs:
         with:
           node-version: 14.x
       - name: Install dependencies
-        run: npm i
+        run: |
+          cd packager
+          npm i
       - name: Build
         run: npm run build
         env:

@@ -29,10 +29,27 @@ jobs:
       - name: Install npm package
         run: |
           git clone https://github.com/ShredMod/packager.git
+          
+      - name: Build
+        run: |
           cd packager
-          npm i
-          npm run build
-          cd ..
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.x
+    - name: Install dependencies
+      run: npm i
+    - name: Build
+      run: npm run build
+      env:
+        NODE_ENV: production
+        ENABLE_SERVICE_WORKER: 1
+    - name: Test
+      run: npm test
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./dist/
       
       - name: Run the NODE project
         run: |

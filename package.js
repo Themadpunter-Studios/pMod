@@ -3,7 +3,7 @@ const path = require('path');
 
 // You should use require('@turbowarp/packager') instead
 // We use a strange require() in this demo because we use this to test the API internally
-const Packager = require('packager');
+const Packager = require('./packager');
 
 const run = async () => {
   const projectData = fs.readFileSync(path.join('pMod.sb3'));

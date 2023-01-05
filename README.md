@@ -7,6 +7,10 @@ Open up an instance of ShredMod (https://shredmod.github.io/scratch-vm/). Then, 
 
 WASD - Move
 
+Arrow Keys - Select in Some Menus
+
+Number Keys - Select in Some Menus
+
 Mouse - Move Pointer
 
 Click - Use action

@@ -35,6 +35,8 @@ C - Place camera at mouse pointer
 
 V - View camera
 
+M - Move camera to mouse pointer
+
 ## Making PRs
 
 Instead of submitting the full .sb3 file, please only submit the unzipped pMod folder so we can verify the code.
